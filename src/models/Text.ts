@@ -9,8 +9,11 @@ const Text = types.model({
 	params: types.model({
 		x: types.number,
 		y: types.number,
-		isStatic: false,
-		rightFacing: true,
+		copy: "", // only support english for now.
+		anchor: types.model({
+			x: 0.5,
+			y: 0.5,
+		}),
 	}),
 }).actions((self) => ({
 	move(deltaX: number, deltaY: number): void {
