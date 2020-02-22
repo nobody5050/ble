@@ -9,7 +9,9 @@ const Text = types.model({
 	params: types.model({
 		x: types.number,
 		y: types.number,
-		copy: "", // only support english for now.
+		copy: types.model({
+			en: "",
+		}),
 		anchor: types.model({
 			x: 0.5,
 			y: 0.5,
