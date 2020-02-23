@@ -78,9 +78,8 @@ const PixiApp: FunctionComponent<{}> = () => {
 						<Text
 							x={x}
 							y={y}
-							copy={copy}
+							copy={copy.en}
 							key={id}
-							isSelected={isSelected}
 							interactive
 							pointerdown={(ev): void => dispatch({ type: 'entityPointerdown', entityId: id, ev })}
 						/>
